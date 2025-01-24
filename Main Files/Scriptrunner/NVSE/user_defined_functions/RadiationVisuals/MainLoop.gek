@@ -1,0 +1,32 @@
+float fRadiation
+float fEffectAlpha
+
+begin Function {}
+	
+	fRadiation = (GetMinOf ((player.GetRadiationLevelAlt - (Goo1.AuxVarGetFlt "*RV_INI" 0)) * (Goo1.AuxVarGetFlt "*RV_INI" 1)) 255) + (GetUIFloatAlt "HudMainMenu\_RV+M") ; Get radiation amount
+	fEffectAlpha = GetUIFloatAlt "HudMainMenu\_RV+A"															; Get effect alpha
+	
+	if fRadiation > 0 || fEffectAlpha > 0																		; If radiation amount or effect alpha > 0
+
+		SetImageSpaceModTrait HouseDecorationRaider 37 (1 + (fEffectAlpha * (Goo1.AuxVarGetFlt "*RV_INI" 4)))	; Update IMOD color saturation
+		SetImageSpaceModTrait HouseDecorationRaider 41 (1 + (fEffectAlpha * (Goo1.AuxVarGetFlt "*RV_INI" 5)))	; Update IMOD color contrast
+		SetImageSpaceModTrait HouseDecorationRaider 43 (1 + (fEffectAlpha * (Goo1.AuxVarGetFlt "*RV_INI" 6)))	; Update IMOD brightness
+		SetImageSpaceModTrait HouseDecorationRaider 45 (fEffectAlpha * (Goo1.AuxVarGetFlt "*RV_INI" 2))      	; Update IMOD blur
+		SetImageSpaceModTrait HouseDecorationRaider 46 (fEffectAlpha * (Goo1.AuxVarGetFlt "*RV_INI" 3))      	; Update IMOD double vision
+																								
+		if Goo1.AuxVarGetFlt "*RV_FLAG" 0 != 1                                                 					; If IMOD not active
+			imod HouseDecorationRaider																			; Apply IMOD
+			Goo1.AuxVarSetFlt "*RV_FLAG" 1 0																	; Set IMOD flag
+		endif
+		
+	elseif Goo1.AuxVarGetFlt "*RV_FLAG" 0 != 0																	; If IMOD active
+		rimod HouseDecorationRaider																				; Remove IMOD
+		Goo1.AuxVarSetFlt "*RV_FLAG" 0 0																		; Set IMOD flag
+	endif
+	
+	if Goo1.AuxVarGetFlt "*RV_FLAG" 1 != fRadiation																; If effect alpha needs updating
+		SetUIFloatGradual "HudMainMenu\_RV+A" fEffectAlpha fRadiation 0.2										; Transition effect alpha
+		Goo1.AuxVarSetFlt "*RV_FLAG" fRadiation 1																; Cache effect alpha target
+	endif
+
+end

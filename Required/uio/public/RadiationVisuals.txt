@@ -1,0 +1,2 @@
+Stentorious\RadiationVisuals.xml::HUDMainMenu
+true

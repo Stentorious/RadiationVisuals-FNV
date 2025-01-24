@@ -1,0 +1,68 @@
+; Radiation Visuals - Stentorious
+if eval Goo1.AuxVarGetFlt "*RV_Init" != 1
+
+	; Check for requirements
+	if GetNVSEVersion > 5 && GetNVSERevision > 2 && GetNVSEBeta > 2
+	else
+		MessageBoxEx "Radiation Visuals missing requirement!%rInstall xNVSE 6.3.3+."
+		return
+	endif
+	if GetPluginVersion "JohnnyGuitarNVSE" < 455
+		MessageBoxEx "Radiation Visuals missing requirement!%rInstall latest JohnnyGuitar NVSE plugin."
+		return
+	endif
+	Goo1.AuxVarSetFlt "*RV_Init" 1
+
+	; Load INI config
+	SetUIFloatAlt "HudMainMenu\_RV+P" (GetMaxOf 0 (GetMinOf 2 (GetINIFloat "Effect:fParticleStrength" "RadiationVisuals.ini")))				; Set radiation particle strength
+	SetUIFloatAlt "HudMainMenu\_RV+S" (GetMaxOf 0 (GetMinOf 1 (GetINIFloat "Effect:fStaticStrength" "RadiationVisuals.ini")))				; Set static noise strength
+	Goo1.AuxVarSetFlt "*RV_INI" (GetMaxOf 0 (GetMinOf 499 (GetINIFloat "General:fRadiationMin" "RadiationVisuals.ini"))) 0					; Set minimum radiation threshold
+	Goo1.AuxVarSetFlt "*RV_INI" (255 / ((GetMaxOf (Goo1.AuxVarGetFlt "*RV_INI" 0) (GetMinOf 500 (GetINIFloat "General:fRadiationMax" "RadiationVisuals.ini"))) - (Goo1.AuxVarGetFlt "*RV_INI" 0))) 1
+	Goo1.AuxVarSetFlt "*RV_INI" ((GetMaxOf 0 (GetMinOf 1 (GetINIFloat "Effect:fBlurStrength" "RadiationVisuals.ini"))) / 102) 2				; Set IMOD blur strength
+	Goo1.AuxVarSetFlt "*RV_INI" ((GetMaxOf 0 (GetMinOf 1 (GetINIFloat "Effect:fDoubleVisionStrength" "RadiationVisuals.ini"))) / 10200) 3	; Set IMOD double vision strength
+	Goo1.AuxVarSetFlt "*RV_INI" ((GetMaxOf -1 (GetMinOf 5 (GetINIFloat "Effect:fSaturationStrength" "RadiationVisuals.ini"))) / 255) 4		; Set IMOD color saturation strength
+	Goo1.AuxVarSetFlt "*RV_INI" ((GetMaxOf -1 (GetMinOf 1 (GetINIFloat "Effect:fContrastStrength" "RadiationVisuals.ini"))) / 1275) 5		; Set IMOD color contrast strength
+	Goo1.AuxVarSetFlt "*RV_INI" ((GetMaxOf -1 (GetMinOf 1 (GetINIFloat "Effect:fBrightnessStrength" "RadiationVisuals.ini"))) / 85) 6		; Set IMOD brightness strength
+
+	if GetINIFloat "General:bPrioritizeHelmetOverlay" "RadiationVisuals.ini" == 1															; Set IMOD brightness strength
+		SetUIFloatAlt "HudMainMenu\RadiationVisuals\depth" -5000
+	endif
+
+	SetUIFloatAlt "HUDMainMenu\RadiationMeter\MUX_Radiation\Effect\visible" 0																; Disable MUX's radiation visuals
+
+	SetOnFastTravelEventHandler (CompileScript "RadiationVisuals/OnFastTravel.gek") 1														; Remove IMOD on fast travel
+	SetGameMainLoopCallback (CompileScript "RadiationVisuals/MainLoop.gek") 1 10 3															; Main game loop
+	if GetINIFloat "General:bInstantaneousVisuals" "RadiationVisuals.ini" == 1
+		SetOnActorValueChangeEventHandler 1 (CompileScript "RadiationVisuals/OnAVChange54.gek") 0 54										; Update alpha modifier on radiation change
+	endif
+
+	SetUIFloatGradual "HudMainMenu\_RV+0" 0 10.999 0.55 3																					; Start radiation particle animation 1
+	SetUIFloatGradual "HudMainMenu\_RV+1" 0 9.999 0.5 3																						; Start radiation particle animation 2
+	SetUIFloatGradual "HudMainMenu\_RV+2" 0 8.999 0.45 3																					; Start radiation particle animation 3
+
+	SetImageSpaceModTrait HouseDecorationRaider 37 1																						; Update IMOD color saturation (Mult)
+	SetImageSpaceModTrait HouseDecorationRaider 38 0																						; Update IMOD color saturation (Add)
+	SetImageSpaceModTrait HouseDecorationRaider 39 1																						; Update IMOD color contrast (Mult)
+	SetImageSpaceModTrait HouseDecorationRaider 40 0																						; Update IMOD color contrast (Add)
+	SetImageSpaceModTrait HouseDecorationRaider 42 0																						; Update IMOD color contrast (Add)
+	SetImageSpaceModTrait HouseDecorationRaider 47 255																						; Update IMOD color (Tint R)
+	SetImageSpaceModTrait HouseDecorationRaider 48 255																						; Update IMOD color (Tint G)
+	SetImageSpaceModTrait HouseDecorationRaider 49 255																						; Update IMOD color (Tint B)
+	SetImageSpaceModTrait HouseDecorationRaider 50 0																						; Update IMOD color (Tint A)
+
+endif
+
+; Check for requirements
+if GetNVSEVersion > 5 && GetNVSERevision > 2 && GetNVSEBeta > 2
+else
+	return
+endif
+if GetPluginVersion "JohnnyGuitarNVSE" < 455
+	return
+endif
+
+RIMOD HouseDecorationRaider																													; Remove IMOD
+Goo1.AuxVarSetFlt "*RV_FLAG" 0 0																											; Reset IMOD flag
+Goo1.AuxVarSetFlt "*RV_FLAG" 0 1																											; Reset alpha cache
+SetUIFloatGradual "HudMainMenu\_RV+A" 0																										; Reset alpha
+SetUIFloatGradual "HudMainMenu\_RV+M" 0																										; Reset alpha modifier
