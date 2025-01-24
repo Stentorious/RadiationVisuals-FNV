@@ -28,3 +28,6 @@
 
 ## Installation
 Installs with a mod manager via the FOMOD installer.
+
+## Support The Author
+[![Patreon Donation](https://i.imgur.com/TnQwVb6.png)](https://www.patreon.com/stentorious)
