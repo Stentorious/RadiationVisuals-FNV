@@ -49,6 +49,13 @@
 	<width> <copy src="screen()" trait="width" /> </width>
 	<height> <copy src="screen()" trait="height" /> </height>
 
+	<_StaticStrength> 0 </_StaticStrength>
+	<_ParticleStrength> 0 </_ParticleStrength>
+	<_ParticleSystemcolor> 0 </_ParticleSystemcolor>
+	<_ParticleRed> 0 </_ParticleRed>
+	<_ParticleGreen> 255 </_ParticleGreen>
+	<_ParticleBlue> 33 </_ParticleBlue>
+
 	<_RadEnvironment> 0 </_RadEnvironment>
 	<_RadInstant> 0 </_RadInstant>
 	<_RadMin> 0 </_RadMin>
@@ -65,9 +72,6 @@
 		<min> 1 </min>
 	</_EffectControl>
 
-	<_ParticleStrength> 0 </_ParticleStrength>
-	<_StaticStrength> 0 </_StaticStrength>
-
 	<image name="ParticleWeak">
 
 		<visible> 1 </visible>
@@ -81,7 +85,10 @@
 		<width> <copy src="parent()" trait="width" /> </width>
 		<height> <copy src="parent()" trait="height" /> </height>
 		<zoom> -1 </zoom>
-		<systemcolor> 0 </systemcolor>
+		<systemcolor> <copy src="parent()" trait="_ParticleSystemcolor" /> </systemcolor>
+		<red> <copy src="parent()" trait="_ParticleRed" /> </red>
+		<green> <copy src="parent()" trait="_ParticleGreen" /> </green>
+		<blue> <copy src="parent()" trait="_ParticleBlue" /> </blue>
 
 		<_index> 0 </_index>
 		<_filename_0>Interface\Stentorious\radiation\0_0.dds</_filename_0>
@@ -116,7 +123,10 @@
 		<width> <copy src="parent()" trait="width" /> </width>
 		<height> <copy src="parent()" trait="height" /> </height>
 		<zoom> -1 </zoom>
-		<systemcolor> 0 </systemcolor>
+		<systemcolor> <copy src="parent()" trait="_ParticleSystemcolor" /> </systemcolor>
+		<red> <copy src="parent()" trait="_ParticleRed" /> </red>
+		<green> <copy src="parent()" trait="_ParticleGreen" /> </green>
+		<blue> <copy src="parent()" trait="_ParticleBlue" /> </blue>
 
 		<_index> 0 </_index>
 		<_filename_0>Interface\Stentorious\radiation\1_0.dds</_filename_0>
@@ -150,7 +160,10 @@
 		<width> <copy src="parent()" trait="width" /> </width>
 		<height> <copy src="parent()" trait="height" /> </height>
 		<zoom> -1 </zoom>
-		<systemcolor> 0 </systemcolor>
+		<systemcolor> <copy src="parent()" trait="_ParticleSystemcolor" /> </systemcolor>
+		<red> <copy src="parent()" trait="_ParticleRed" /> </red>
+		<green> <copy src="parent()" trait="_ParticleGreen" /> </green>
+		<blue> <copy src="parent()" trait="_ParticleBlue" /> </blue>
 
 		<_index> 0 </_index>
 		<_filename_0>Interface\Stentorious\radiation\2_0.dds</_filename_0>
