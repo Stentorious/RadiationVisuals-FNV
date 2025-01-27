@@ -49,6 +49,8 @@
 	<width> <copy src="screen()" trait="width" /> </width>
 	<height> <copy src="screen()" trait="height" /> </height>
 
+	<_Random> 0 </_Random>
+
 	<_StaticStrength> 0 </_StaticStrength>
 	<_ParticleStrength> 0 </_ParticleStrength>
 	<_ParticleSystemcolor> 0 </_ParticleSystemcolor>
@@ -82,6 +84,22 @@
 			<min> 255 </min>
 			<mul src="parent()" trait="_ParticleStrength" />
 		</alpha>
+		<rotateaxisx>
+			<copy src="me()" trait="width" />
+			<div> 2 </div>
+		</rotateaxisx>
+		<rotateaxisy>
+			<copy src="me()" trait="height" />
+			<div> 2 </div>
+		</rotateaxisy>
+		<rotateangle>
+			<copy> 0 </copy>
+			<add> 3.141592653 </add>
+			<onlyif>
+				<copy src="parent()" trait="_Random" />
+				<bt> 0 </bt>
+			</onlyif>
+		</rotateangle>
 		<width> <copy src="parent()" trait="width" /> </width>
 		<height> <copy src="parent()" trait="height" /> </height>
 		<zoom> -1 </zoom>
@@ -120,6 +138,16 @@
 			<min> 255 </min>
 			<mul src="parent()" trait="_ParticleStrength" />
 		</alpha>
+		<rotateaxisx> <copy src="sibling(ParticleWeak)" trait="rotateaxisx" /> </rotateaxisx>
+		<rotateaxisy> <copy src="sibling(ParticleWeak)" trait="rotateaxisy" /> </rotateaxisy>
+		<rotateangle>
+			<copy> 0 </copy>
+			<add> 3.141592653 </add>
+			<onlyif>
+				<copy src="parent()" trait="_Random" />
+				<bt> 1 </bt>
+			</onlyif>
+		</rotateangle>
 		<width> <copy src="parent()" trait="width" /> </width>
 		<height> <copy src="parent()" trait="height" /> </height>
 		<zoom> -1 </zoom>
@@ -157,6 +185,16 @@
 			<min> 255 </min>
 			<mul src="parent()" trait="_ParticleStrength" />
 		</alpha>
+		<rotateaxisx> <copy src="sibling(ParticleWeak)" trait="rotateaxisx" /> </rotateaxisx>
+		<rotateaxisy> <copy src="sibling(ParticleWeak)" trait="rotateaxisy" /> </rotateaxisy>
+		<rotateangle>
+			<copy> 0 </copy>
+			<add> 3.141592653 </add>
+			<onlyif>
+				<copy src="parent()" trait="_Random" />
+				<bt> 2 </bt>
+			</onlyif>
+		</rotateangle>
 		<width> <copy src="parent()" trait="width" /> </width>
 		<height> <copy src="parent()" trait="height" /> </height>
 		<zoom> -1 </zoom>
@@ -190,6 +228,16 @@
 			<mul> 255 </mul>
 			<mul src="parent()" trait="_StaticStrength" />
 		</alpha>
+		<rotateaxisx> <copy src="sibling(ParticleWeak)" trait="rotateaxisx" /> </rotateaxisx>
+		<rotateaxisy> <copy src="sibling(ParticleWeak)" trait="rotateaxisy" /> </rotateaxisy>
+		<rotateangle>
+			<copy> 0 </copy>
+			<add> 3.141592653 </add>
+			<onlyif>
+				<copy src="parent()" trait="_Random" />
+				<bt> 3 </bt>
+			</onlyif>
+		</rotateangle>
 		<width> <copy src="parent()" trait="width" /> </width>
 		<height> <copy src="parent()" trait="height" /> </height>
 		<zoom> -1 </zoom>

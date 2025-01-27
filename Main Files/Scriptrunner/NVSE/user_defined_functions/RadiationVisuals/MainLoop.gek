@@ -11,7 +11,7 @@ begin Function {}
 		SetUIFloatGradual "HUDMainMenu\RadiationVisuals\_RadEnvironment" fRadiationCurrent fRadiationTarget 0.2
 	endif
 
-	; Update IMOD
+	; Update effect
 	if eval (fEffectControl = GetUIFloatAlt "HUDMainMenu\RadiationVisuals\_EffectControl") > 0
 
 		SetImageSpaceModTrait HouseDecorationRaider 45 (fEffectControl * (Goo1.AuxVarGetFlt "*RadVis_INI" 0))
@@ -25,6 +25,9 @@ begin Function {}
 			IMOD HouseDecorationRaider
 			Goo1.AuxVarSetFlt "*RadVis_IMOD" 1
 		endif
+
+		; Randomize texture rotation
+		SetUIFloatAlt "HUDMainMenu\RadiationVisuals\_Random" (GetRandomInRange 0 16)
 
 	; Remove IMOD
 	elseif eval Goo1.AuxVarGetFlt "*RadVis_IMOD"
