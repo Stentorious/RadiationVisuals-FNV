@@ -1,44 +1,44 @@
 <rect name="RadiationVisuals_Preload">
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_0.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_1.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_2.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_3.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_4.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_5.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_6.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_7.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_8.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_9.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\0_10.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_0.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_1.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_2.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_3.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_4.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_5.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_6.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_7.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_8.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\1_9.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_0.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_1.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_2.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_3.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_4.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_5.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_6.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_7.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\radiation\2_8.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\0.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\1.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\2.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\3.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\4.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\5.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\6.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\7.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\8.dds</filename></image>
-	<image name="Texture"><filename>Interface\Stentorious\static\9.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_0.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_1.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_2.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_3.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_4.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_5.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_6.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_7.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_8.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_9.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\0_10.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_0.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_1.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_2.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_3.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_4.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_5.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_6.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_7.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_8.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\1_9.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_0.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_1.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_2.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_3.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_4.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_5.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_6.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_7.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\RadiationVisuals\2_8.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\0.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\1.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\2.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\3.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\4.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\5.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\6.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\7.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\8.dds</filename></image>
+	<image name="Texture"><filename>Interface\Stentorious\_Common\Static\9.dds</filename></image>
 </rect>
 
 <rect name="RadiationVisuals">
@@ -109,17 +109,17 @@
 		<blue> <copy src="parent()" trait="_ParticleBlue" /> </blue>
 
 		<_index> 0 </_index>
-		<_filename_0>Interface\Stentorious\radiation\0_0.dds</_filename_0>
-		<_filename_1>Interface\Stentorious\radiation\0_1.dds</_filename_1>
-		<_filename_2>Interface\Stentorious\radiation\0_2.dds</_filename_2>
-		<_filename_3>Interface\Stentorious\radiation\0_3.dds</_filename_3>
-		<_filename_4>Interface\Stentorious\radiation\0_4.dds</_filename_4>
-		<_filename_5>Interface\Stentorious\radiation\0_5.dds</_filename_5>
-		<_filename_6>Interface\Stentorious\radiation\0_6.dds</_filename_6>
-		<_filename_7>Interface\Stentorious\radiation\0_7.dds</_filename_7>
-		<_filename_8>Interface\Stentorious\radiation\0_8.dds</_filename_8>
-		<_filename_9>Interface\Stentorious\radiation\0_9.dds</_filename_9>
-		<_filename_10>Interface\Stentorious\radiation\0_10.dds</_filename_10>
+		<_filename_0> Interface\Stentorious\RadiationVisuals\0_0.dds </_filename_0>
+		<_filename_1> Interface\Stentorious\RadiationVisuals\0_1.dds </_filename_1>
+		<_filename_2> Interface\Stentorious\RadiationVisuals\0_2.dds </_filename_2>
+		<_filename_3> Interface\Stentorious\RadiationVisuals\0_3.dds </_filename_3>
+		<_filename_4> Interface\Stentorious\RadiationVisuals\0_4.dds </_filename_4>
+		<_filename_5> Interface\Stentorious\RadiationVisuals\0_5.dds </_filename_5>
+		<_filename_6> Interface\Stentorious\RadiationVisuals\0_6.dds </_filename_6>
+		<_filename_7> Interface\Stentorious\RadiationVisuals\0_7.dds </_filename_7>
+		<_filename_8> Interface\Stentorious\RadiationVisuals\0_8.dds </_filename_8>
+		<_filename_9> Interface\Stentorious\RadiationVisuals\0_9.dds </_filename_9>
+		<_filename_10> Interface\Stentorious\RadiationVisuals\0_10.dds </_filename_10>
 		<filename>
 			<copy src="me()" trait="_index"/>
 			<copy src="me()" trait="_filename_"/>
@@ -157,16 +157,16 @@
 		<blue> <copy src="parent()" trait="_ParticleBlue" /> </blue>
 
 		<_index> 0 </_index>
-		<_filename_0>Interface\Stentorious\radiation\1_0.dds</_filename_0>
-		<_filename_1>Interface\Stentorious\radiation\1_1.dds</_filename_1>
-		<_filename_2>Interface\Stentorious\radiation\1_2.dds</_filename_2>
-		<_filename_3>Interface\Stentorious\radiation\1_3.dds</_filename_3>
-		<_filename_4>Interface\Stentorious\radiation\1_4.dds</_filename_4>
-		<_filename_5>Interface\Stentorious\radiation\1_5.dds</_filename_5>
-		<_filename_6>Interface\Stentorious\radiation\1_6.dds</_filename_6>
-		<_filename_7>Interface\Stentorious\radiation\1_7.dds</_filename_7>
-		<_filename_8>Interface\Stentorious\radiation\1_8.dds</_filename_8>
-		<_filename_9>Interface\Stentorious\radiation\1_9.dds</_filename_9>
+		<_filename_0> Interface\Stentorious\RadiationVisuals\1_0.dds </_filename_0>
+		<_filename_1> Interface\Stentorious\RadiationVisuals\1_1.dds </_filename_1>
+		<_filename_2> Interface\Stentorious\RadiationVisuals\1_2.dds </_filename_2>
+		<_filename_3> Interface\Stentorious\RadiationVisuals\1_3.dds </_filename_3>
+		<_filename_4> Interface\Stentorious\RadiationVisuals\1_4.dds </_filename_4>
+		<_filename_5> Interface\Stentorious\RadiationVisuals\1_5.dds </_filename_5>
+		<_filename_6> Interface\Stentorious\RadiationVisuals\1_6.dds </_filename_6>
+		<_filename_7> Interface\Stentorious\RadiationVisuals\1_7.dds </_filename_7>
+		<_filename_8> Interface\Stentorious\RadiationVisuals\1_8.dds </_filename_8>
+		<_filename_9> Interface\Stentorious\RadiationVisuals\1_9.dds </_filename_9>
 		<filename>
 			<copy src="me()" trait="_index"/>
 			<copy src="me()" trait="_filename_"/>
@@ -204,15 +204,15 @@
 		<blue> <copy src="parent()" trait="_ParticleBlue" /> </blue>
 
 		<_index> 0 </_index>
-		<_filename_0>Interface\Stentorious\radiation\2_0.dds</_filename_0>
-		<_filename_1>Interface\Stentorious\radiation\2_1.dds</_filename_1>
-		<_filename_2>Interface\Stentorious\radiation\2_2.dds</_filename_2>
-		<_filename_3>Interface\Stentorious\radiation\2_3.dds</_filename_3>
-		<_filename_4>Interface\Stentorious\radiation\2_4.dds</_filename_4>
-		<_filename_5>Interface\Stentorious\radiation\2_5.dds</_filename_5>
-		<_filename_6>Interface\Stentorious\radiation\2_6.dds</_filename_6>
-		<_filename_7>Interface\Stentorious\radiation\2_7.dds</_filename_7>
-		<_filename_8>Interface\Stentorious\radiation\2_8.dds</_filename_8>
+		<_filename_0> Interface\Stentorious\RadiationVisuals\2_0.dds </_filename_0>
+		<_filename_1> Interface\Stentorious\RadiationVisuals\2_1.dds </_filename_1>
+		<_filename_2> Interface\Stentorious\RadiationVisuals\2_2.dds </_filename_2>
+		<_filename_3> Interface\Stentorious\RadiationVisuals\2_3.dds </_filename_3>
+		<_filename_4> Interface\Stentorious\RadiationVisuals\2_4.dds </_filename_4>
+		<_filename_5> Interface\Stentorious\RadiationVisuals\2_5.dds </_filename_5>
+		<_filename_6> Interface\Stentorious\RadiationVisuals\2_6.dds </_filename_6>
+		<_filename_7> Interface\Stentorious\RadiationVisuals\2_7.dds </_filename_7>
+		<_filename_8> Interface\Stentorious\RadiationVisuals\2_8.dds </_filename_8>
 		<filename>
 			<copy src="me()" trait="_index"/>
 			<copy src="me()" trait="_filename_"/>
@@ -243,16 +243,16 @@
 		<zoom> -1 </zoom>
 		<systemcolor> 0 </systemcolor>
 
-		<_filename_0>Interface\Stentorious\static\0.dds</_filename_0>
-		<_filename_1>Interface\Stentorious\static\1.dds</_filename_1>
-		<_filename_2>Interface\Stentorious\static\2.dds</_filename_2>
-		<_filename_3>Interface\Stentorious\static\3.dds</_filename_3>
-		<_filename_4>Interface\Stentorious\static\4.dds</_filename_4>
-		<_filename_5>Interface\Stentorious\static\5.dds</_filename_5>
-		<_filename_6>Interface\Stentorious\static\6.dds</_filename_6>
-		<_filename_7>Interface\Stentorious\static\7.dds</_filename_7>
-		<_filename_8>Interface\Stentorious\static\8.dds</_filename_8>
-		<_filename_9>Interface\Stentorious\static\9.dds</_filename_9>
+		<_filename_0> Interface\Stentorious\_Common\Static\0.dds </_filename_0>
+		<_filename_1> Interface\Stentorious\_Common\Static\1.dds </_filename_1>
+		<_filename_2> Interface\Stentorious\_Common\Static\2.dds </_filename_2>
+		<_filename_3> Interface\Stentorious\_Common\Static\3.dds </_filename_3>
+		<_filename_4> Interface\Stentorious\_Common\Static\4.dds </_filename_4>
+		<_filename_5> Interface\Stentorious\_Common\Static\5.dds </_filename_5>
+		<_filename_6> Interface\Stentorious\_Common\Static\6.dds </_filename_6>
+		<_filename_7> Interface\Stentorious\_Common\Static\7.dds </_filename_7>
+		<_filename_8> Interface\Stentorious\_Common\Static\8.dds </_filename_8>
+		<_filename_9> Interface\Stentorious\_Common\Static\9.dds </_filename_9>
 		<filename>
 			<copy src="sibling(ParticleAverage)" trait="_index"/>
 			<copy src="me()" trait="_filename_"/>
