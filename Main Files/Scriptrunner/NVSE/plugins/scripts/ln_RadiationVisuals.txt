@@ -21,11 +21,11 @@ if eval Goo1.AuxVarGetFlt "*RadVis_Init" 0 != 1
 	SetUIFloatAlt "HUDMainMenu\RadiationVisuals\_StaticStrength" (GetMaxOf 0 (GetMinOf 1 (GetINIFloat "Effect:fStaticStrength" "Stentorious\RadiationVisuals.ini")))
 	SetUIFloatAlt "HUDMainMenu\RadiationVisuals\_RadMin" (GetMaxOf 0 (GetINIFloat "General:fRadiationMin" "Stentorious\RadiationVisuals.ini"))
 	SetUIFloatAlt "HUDMainMenu\RadiationVisuals\_RadMax" (GetMaxOf (GetUIFloatAlt "HUDMainMenu\RadiationVisuals\_RadMin") (GetINIFloat "General:fRadiationMax" "Stentorious\RadiationVisuals.ini"))
-	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf 0 (GetMinOf 1 (GetINIFloat "Effect:fBlurStrength" "Stentorious\RadiationVisuals.ini"))) / 102) 0
-	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf 0 (GetMinOf 1 (GetINIFloat "Effect:fDoubleVisionStrength" "Stentorious\RadiationVisuals.ini"))) / 10200) 1
-	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf -1 (GetMinOf 5 (GetINIFloat "Effect:fSaturationStrength" "Stentorious\RadiationVisuals.ini"))) / 255) 2
-	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf -1 (GetMinOf 1 (GetINIFloat "Effect:fContrastStrength" "Stentorious\RadiationVisuals.ini"))) / 1275) 3
-	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf -1 (GetMinOf 1 (GetINIFloat "Effect:fBrightnessStrength" "Stentorious\RadiationVisuals.ini"))) / 85) 4
+	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf 0 (GetMinOf 1 (GetINIFloat "Effect:fBlurStrength" "Stentorious\RadiationVisuals.ini"))) * 2.5) 0
+	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf 0 (GetMinOf 1 (GetINIFloat "Effect:fDoubleVisionStrength" "Stentorious\RadiationVisuals.ini"))) * 0.025) 1
+	Goo1.AuxVarSetFlt "*RadVis_INI" (GetMaxOf -1 (GetMinOf 5 (GetINIFloat "Effect:fSaturationStrength" "Stentorious\RadiationVisuals.ini"))) 2
+	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf -1 (GetMinOf 1 (GetINIFloat "Effect:fContrastStrength" "Stentorious\RadiationVisuals.ini"))) * 0.2) 3
+	Goo1.AuxVarSetFlt "*RadVis_INI" ((GetMaxOf -1 (GetMinOf 1 (GetINIFloat "Effect:fBrightnessStrength" "Stentorious\RadiationVisuals.ini"))) * 3) 4
 	if eval GetINIFloat "General:bPrioritizeHelmetOverlay" "Stentorious\RadiationVisuals.ini"
 		SetUIFloatAlt "HUDMainMenu\RadiationVisuals\depth" -5000
 	endif
