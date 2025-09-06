@@ -45,7 +45,11 @@
 
 	<visible> 1 </visible>
 	<locus> 1 </locus>
-	<depth> -11 </depth>
+	<depth>
+		<copy> -5000 </copy>
+		<onlyif src="me()" trait="_HelmetOverlayDepth" />
+		<sub> -11 </sub>
+	</depth>
 	<width> <copy src="screen()" trait="width" /> </width>
 	<height> <copy src="screen()" trait="height" /> </height>
 
@@ -73,6 +77,8 @@
 		<max> 0 </max>
 		<min> 1 </min>
 	</_EffectControl>
+
+	<_HelmetOverlayDepth> 1 </_HelmetOverlayDepth>
 
 	<image name="ParticleWeak">
 
