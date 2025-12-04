@@ -122,6 +122,14 @@
 					"scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
 				},
 				"18": {
+					"title": "$ScreenTint",
+					"enable": 1,
+					"type": 2.5,
+					"mouse": "$ScreenTintMouse",
+					"vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 6, "configINI": "Effect:fTintStrength", "default": 0.3 }],
+					"scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
+				},
+				"20": {
 					"title": "$ParticleColor",
 					"type": 9,
 					"enable": 1,

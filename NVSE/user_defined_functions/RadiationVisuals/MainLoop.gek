@@ -19,6 +19,7 @@ begin Function {}
 		SetImageSpaceModTrait HouseDecorationRaider 37 (1 + (fEffectControl * (Goo1.AuxVarGetFlt "*RadVis_INI" 2)))
 		SetImageSpaceModTrait HouseDecorationRaider 41 (1 + (fEffectControl * (Goo1.AuxVarGetFlt "*RadVis_INI" 3) * 0.2))
 		SetImageSpaceModTrait HouseDecorationRaider 43 (1 + (fEffectControl * (Goo1.AuxVarGetFlt "*RadVis_INI" 4) * 3))
+		SetImageSpaceModTrait HouseDecorationRaider 50 (fEffectControl * (Goo1.AuxVarGetFlt "*RadVis_INI" 6) * 255)
 
 		; Apply IMOD
 		if Goo1.AuxVarGetFlt "*RadVis_IMOD" == 0
