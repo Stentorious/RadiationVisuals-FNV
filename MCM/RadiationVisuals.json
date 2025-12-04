@@ -1,138 +1,138 @@
 {
-    "modName": "RadiationVisuals",
-    "displayName": "$modDisplayName",
+	"modName": "RadiationVisuals",
+	"displayName": "$modDisplayName",
 	"description": "$modDescription",
-    "saveFile": "Stentorious/RadiationVisuals.ini",
-    "minMCMVersion": 1.00,
-    "minModVersion": 1.00,
-    "requirements": [
-        { "type": "file", "file": "NVSE/plugins/scripts/ln_RadiationVisuals.txt" }
-    ],
-    "submenus": {
-        "0": {
-            "listTitle": "$modDisplayName",
-            "pageTitle": "$modDisplayName",
-            "active": 1,
-            "columns": 2,
-            "enable": 1,
-            "options": {
-                "1": {
-                    "title": "$General",
-                    "enable": 1,
-                    "type": 0
+	"saveFile": "Stentorious/RadiationVisuals.ini",
+	"minMCMVersion": 1.00,
+	"minModVersion": 1.00,
+	"requirements": [
+		{ "type": "file", "file": "NVSE/plugins/scripts/ln_RadiationVisuals.txt" }
+	],
+	"submenus": {
+		"0": {
+			"listTitle": "$modDisplayName",
+			"pageTitle": "$modDisplayName",
+			"active": 1,
+			"columns": 2,
+			"enable": 1,
+			"options": {
+				"1": {
+					"title": "$General",
+					"enable": 1,
+					"type": 0
 				},
-                "3": {
-                    "title": "$RadiationThreshold",
-                    "type": 8,
-                    "enable": 1,
-                    "mouse": "$RadiationThresholdMouse",
-                    "vars": [
-                        { "uiTrait": "HUDMainMenu/RadiationVisuals/_RadMin", "configINI": "General:fRadiationMin", "default": 0 },
-                        { "uiTrait": "HUDMainMenu/RadiationVisuals/_RadMax", "configINI": "General:fRadiationMax", "default": 15 }
+				"3": {
+					"title": "$RadiationThreshold",
+					"type": 8,
+					"enable": 1,
+					"mouse": "$RadiationThresholdMouse",
+					"vars": [
+						{ "uiTrait": "HUDMainMenu/RadiationVisuals/_RadMin", "configINI": "General:fRadiationMin", "default": 0 },
+						{ "uiTrait": "HUDMainMenu/RadiationVisuals/_RadMax", "configINI": "General:fRadiationMax", "default": 15 }
 					],
-                    "scale": {
-                        "setting1": "Min",
-                        "setting2": "Max",
-                        "value1Decimal": 0,
-                        "value2Decimal": 0,
-                        "value1Increment": 1,
-                        "value2Increment": 1,
-                        "value1Min": 0,
-                        "value2Min": 0,
-                        "value1Max": 50,
-                        "value2Max": 50
-                    }
-                },
-                "5": {
-                    "title": "$InstantaneousVisuals",
-                    "type": 5,
-                    "enable": 1,
-                    "mouse": "$InstantaneousVisualsMouse",
+					"scale": {
+						"setting1": "Min",
+						"setting2": "Max",
+						"value1Decimal": 0,
+						"value2Decimal": 0,
+						"value1Increment": 1,
+						"value2Increment": 1,
+						"value1Min": 0,
+						"value2Min": 0,
+						"value1Max": 50,
+						"value2Max": 50
+					}
+				},
+				"5": {
+					"title": "$InstantaneousVisuals",
+					"type": 5,
+					"enable": 1,
+					"mouse": "$InstantaneousVisualsMouse",
 					"vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 5, "configINI": "General:bInstantaneousVisuals", "default": 1 }]
-                },
-                "7": {
-                    "title": "$HelmetOverlayPriority",
-                    "type": 6,
-                    "enable": 1,
-                    "mouse": "$HelmetOverlayPriorityMouse",
+				},
+				"7": {
+					"title": "$HelmetOverlayPriority",
+					"type": 6,
+					"enable": 1,
+					"mouse": "$HelmetOverlayPriorityMouse",
 					"state": { "form": "Goo1", "auxVar": "*_Helmet Overlay.esm", "key": 0, "value": 1 },
 					"vars": [{ "uiTrait": "HUDMainMenu/RadiationVisuals/_HelmetOverlayDepth", "configINI": "General:bPrioritizeHelmetOverlay", "default": 1 }],
 					"textOff": "Over",
 					"textOn": "Under"
-                },
-                "2": {
-                    "title": "$VisualEffect",
-                    "enable": 1,
-                    "type": 0
 				},
-                "4": {
-                    "title": "$Particle",
-                    "enable": 1,
-                    "type": 2.5,
-                    "mouse": "$ParticleMouse",
-                    "vars": [ { "uiTrait": "HUDMainMenu/RadiationVisuals/_ParticleStrength", "configINI": "Effect:fParticleStrength", "default": 1.2 }],
-                    "scale": { "valueDecimal": 2, "valueIncrement": 0.02, "valueMin": 0, "valueMax": 2 }
-				},
-                "6": {
-                    "title": "$Static",
-                    "enable": 1,
-                    "type": 2.5,
-                    "mouse": "$StaticMouse",
-                    "vars": [ { "uiTrait": "HUDMainMenu/RadiationVisuals/_StaticStrength", "configINI": "Effect:fStaticStrength", "default": 0.15 }],
-                    "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
-				},
-                "8": {
-                    "title": "$Blur",
-                    "enable": 1,
-                    "type": 2.5,
-                    "mouse": "$BlurMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 0, "configINI": "Effect:fBlurStrength", "default": 0.5 }],
-                    "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
-				},
-                "10": {
-                    "title": "$DoubleVision",
-                    "enable": 1,
-                    "type": 2.5,
-                    "mouse": "$DoubleVisionMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 1, "configINI": "Effect:fDoubleVisionStrength", "default": 0.2 }],
-                    "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
-				},
-                "12": {
-                    "title": "$Saturation",
-                    "enable": 1,
-                    "type": 2.5,
-                    "mouse": "$SaturationMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 2, "configINI": "Effect:fSaturationStrength", "default": 0.3 }],
-                    "scale": { "valueDecimal": 2, "valueIncrement": 0.05, "valueMin": -1, "valueMax": 5 }
-				},
-                "14": {
-                    "title": "$Contrast",
-                    "enable": 1,
-                    "type": 2.5,
-                    "mouse": "$ContrastMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 3, "configINI": "Effect:fContrastStrength", "default": 0 }],
-                    "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
-				},
-                "16": {
-                    "title": "$Brightness",
-                    "enable": 1,
-                    "type": 2.5,
-                    "mouse": "$BrightnessMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 4, "configINI": "Effect:fBrightnessStrength", "default": 0 }],
-                    "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
-				},
-                "18": {
-                    "title": "$ParticleColor",
-                    "type": 9,
+				"2": {
+					"title": "$VisualEffect",
 					"enable": 1,
-                    "mouse": "$ParticleColorMouse",
-                    "vars": [
-                        { "uiTrait": "HUDMainMenu/RadiationVisuals/_ParticleRed", "configINI": "Color:iParticleRed", "default": 0 },
+					"type": 0
+				},
+				"4": {
+					"title": "$Particle",
+					"enable": 1,
+					"type": 2.5,
+					"mouse": "$ParticleMouse",
+					"vars": [ { "uiTrait": "HUDMainMenu/RadiationVisuals/_ParticleStrength", "configINI": "Effect:fParticleStrength", "default": 1.2 }],
+					"scale": { "valueDecimal": 2, "valueIncrement": 0.02, "valueMin": 0, "valueMax": 2 }
+				},
+				"6": {
+					"title": "$Static",
+					"enable": 1,
+					"type": 2.5,
+					"mouse": "$StaticMouse",
+					"vars": [ { "uiTrait": "HUDMainMenu/RadiationVisuals/_StaticStrength", "configINI": "Effect:fStaticStrength", "default": 0.15 }],
+					"scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
+				},
+				"8": {
+					"title": "$Blur",
+					"enable": 1,
+					"type": 2.5,
+					"mouse": "$BlurMouse",
+					"vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 0, "configINI": "Effect:fBlurStrength", "default": 0.5 }],
+					"scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
+				},
+				"10": {
+					"title": "$DoubleVision",
+					"enable": 1,
+					"type": 2.5,
+					"mouse": "$DoubleVisionMouse",
+					"vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 1, "configINI": "Effect:fDoubleVisionStrength", "default": 0.2 }],
+					"scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
+				},
+				"12": {
+					"title": "$Saturation",
+					"enable": 1,
+					"type": 2.5,
+					"mouse": "$SaturationMouse",
+					"vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 2, "configINI": "Effect:fSaturationStrength", "default": 0.3 }],
+					"scale": { "valueDecimal": 2, "valueIncrement": 0.05, "valueMin": -1, "valueMax": 5 }
+				},
+				"14": {
+					"title": "$Contrast",
+					"enable": 1,
+					"type": 2.5,
+					"mouse": "$ContrastMouse",
+					"vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 3, "configINI": "Effect:fContrastStrength", "default": 0 }],
+					"scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
+				},
+				"16": {
+					"title": "$Brightness",
+					"enable": 1,
+					"type": 2.5,
+					"mouse": "$BrightnessMouse",
+					"vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 4, "configINI": "Effect:fBrightnessStrength", "default": 0 }],
+					"scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
+				},
+				"18": {
+					"title": "$ParticleColor",
+					"type": 9,
+					"enable": 1,
+					"mouse": "$ParticleColorMouse",
+					"vars": [
+						{ "uiTrait": "HUDMainMenu/RadiationVisuals/_ParticleRed", "configINI": "Color:iParticleRed", "default": 0 },
 						{ "uiTrait": "HUDMainMenu/RadiationVisuals/_ParticleGreen", "configINI": "Color:iParticleGreen", "default": 255 },
 						{ "uiTrait": "HUDMainMenu/RadiationVisuals/_ParticleBlue", "configINI": "Color:iParticleBlue", "default": 33 }
 					]
-                }
-            }
-        }
-    }
+				}
+			}
+		}
+	}
 }
