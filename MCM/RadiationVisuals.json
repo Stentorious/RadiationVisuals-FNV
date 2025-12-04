@@ -48,7 +48,7 @@
                     "type": 5,
                     "enable": 1,
                     "mouse": "$InstantaneousVisualsMouse",
-					"vars": [{ "form": "Goo1", "auxVar": "*_RadVis_INI", "key": 5, "configINI": "General:bInstantaneousVisuals", "default": 1 }]
+					"vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 5, "configINI": "General:bInstantaneousVisuals", "default": 1 }]
                 },
                 "7": {
                     "title": "$HelmetOverlayPriority",
@@ -86,7 +86,7 @@
                     "enable": 1,
                     "type": 2.5,
                     "mouse": "$BlurMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*_RadVis_INI", "key": 0, "configINI": "Effect:fBlurStrength", "default": 0.5 }],
+                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 0, "configINI": "Effect:fBlurStrength", "default": 0.5 }],
                     "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
 				},
                 "10": {
@@ -94,7 +94,7 @@
                     "enable": 1,
                     "type": 2.5,
                     "mouse": "$DoubleVisionMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*_RadVis_INI", "key": 1, "configINI": "Effect:fDoubleVisionStrength", "default": 0.2 }],
+                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 1, "configINI": "Effect:fDoubleVisionStrength", "default": 0.2 }],
                     "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
 				},
                 "12": {
@@ -102,7 +102,7 @@
                     "enable": 1,
                     "type": 2.5,
                     "mouse": "$SaturationMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*_RadVis_INI", "key": 2, "configINI": "Effect:fSaturationStrength", "default": 0.3 }],
+                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 2, "configINI": "Effect:fSaturationStrength", "default": 0.3 }],
                     "scale": { "valueDecimal": 2, "valueIncrement": 0.05, "valueMin": -1, "valueMax": 5 }
 				},
                 "14": {
@@ -110,7 +110,7 @@
                     "enable": 1,
                     "type": 2.5,
                     "mouse": "$ContrastMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*_RadVis_INI", "key": 3, "configINI": "Effect:fContrastStrength", "default": 0 }],
+                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 3, "configINI": "Effect:fContrastStrength", "default": 0 }],
                     "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
 				},
                 "16": {
@@ -118,7 +118,7 @@
                     "enable": 1,
                     "type": 2.5,
                     "mouse": "$BrightnessMouse",
-                    "vars": [{ "form": "Goo1", "auxVar": "*_RadVis_INI", "key": 4, "configINI": "Effect:fBrightnessStrength", "default": 0 }],
+                    "vars": [{ "form": "Goo1", "auxVar": "*RadVis_INI", "key": 4, "configINI": "Effect:fBrightnessStrength", "default": 0 }],
                     "scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
 				},
                 "18": {
