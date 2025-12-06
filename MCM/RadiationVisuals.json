@@ -130,10 +130,10 @@
 					"scale": { "valueDecimal": 2, "valueIncrement": 0.01, "valueMin": 0, "valueMax": 1 }
 				},
 				"20": {
-					"title": "$ParticleColor",
+					"title": "$EffectColor",
 					"type": 9,
 					"enable": 1,
-					"mouse": "$ParticleColorMouse",
+					"mouse": "$EffectColorMouse",
 					"vars": [
 						{ "uiTrait": "HUDMainMenu/RadiationVisuals/_ParticleRed", "configINI": "Color:iParticleRed", "default": 0 },
 						{ "uiTrait": "HUDMainMenu/RadiationVisuals/_ParticleGreen", "configINI": "Color:iParticleGreen", "default": 255 },
