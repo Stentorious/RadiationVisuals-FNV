@@ -88,7 +88,10 @@ end) 1
 
 ; Update effect on instantaneous radiation (Eg. Eating food)
 SetOnActorValueChangeEventHandler 1 (begin Function {int iAVCode, float fPreviousValue, float fNewValue}
-	if eval Goo1.AuxVarGetFlt "*RadVis_INI" 5 && (fNewValue -= fPreviousValue) > 0 && Player.GetRadiationLevelAlt == 0
+	if eval Goo1.AuxVarGetFlt "*RadVis_INI" 5 == 0
+		return
+	endif
+	if eval (fNewValue -= fPreviousValue) > 1 || (fNewValue > 0 && Player.GetRadiationLevelAlt == 0)
 		SetUIFloatGradual "HUDMainMenu\RadiationVisuals\_RadInstant" fNewValue 0 2
 	endif
 end) 0 54
